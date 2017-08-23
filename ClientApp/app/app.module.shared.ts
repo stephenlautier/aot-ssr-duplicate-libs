@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { OdinCoreModule } from '@odin/ngx.core';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { AppComponent } from './components/app/app.component';
@@ -22,7 +21,6 @@ import { CounterComponent } from './components/counter/counter.component';
     ],
     imports: [
         TranslateModule,
-        OdinCoreModule,
         CommonModule,
         HttpModule,
         FormsModule,
