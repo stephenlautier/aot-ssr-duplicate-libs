@@ -1,4 +1,4 @@
-# Repro
+# angular SSR + AOT emitting twice libs
 - Run the following
 ```
 git clone https://github.com/stephenlautier/aot-ssr-duplicate-libs
