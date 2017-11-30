@@ -13,6 +13,7 @@ const treeShakableModules = [
     '@angular/platform-browser-dynamic',
     '@angular/router',
     "@ngx-translate/core",
+    '@odin/ngx.core',
     'zone.js',
 ];
 const nonTreeShakableModules = [
@@ -74,7 +75,7 @@ module.exports = (env) => {
 
     const serverBundleConfig = merge(sharedConfig, {
         target: 'node',
-        resolve: { mainFields: ['main'] },
+        // resolve: { mainFields: ['main'] },
         entry: { vendor: allModules.concat(['aspnet-prerendering']) },
         output: {
             path: path.join(__dirname, 'ClientApp', 'dist'),
